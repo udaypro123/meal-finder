@@ -20,6 +20,8 @@ const Favirote = () => {
                 <div className="favirtoteLowerpart">
 
                     {
+                        favirote.length >0 ? <>
+                        {
                         favirote && favirote.map((faviroteitem) => {
                             return <>
                                 <div className="recipeCard flexdivRowevenly" >
@@ -29,6 +31,10 @@ const Favirote = () => {
                                 </div>
                             </>
                         })
+                    }
+                        </>:<>
+                            <h2 style={{marginTop:"5rem", color:"Red"}}>No item in your favroute list</h2>
+                        </>
                     }
 
                 </div>

@@ -11,6 +11,7 @@ function App() {
     <Route path='/' element={<Homepage/>} />
     <Route path='/showdetails' element={<Showdetails/>} />
     <Route path='/fav' element={<Favirote/>} />
+    <Route path='/favlist' element={<Favirote/>} />
 
 
     </Routes>

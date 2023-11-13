@@ -42,7 +42,7 @@ const Showdetails = () => {
             {dataitem.recipe.ingredients && dataitem.recipe.ingredients.map((item, i) => {
               return <>
                 <Fragment key={i}>
-                  <p className='para'>{item.text}</p>
+                  <p className='para'><img src="https://cdn.pixabay.com/photo/2016/03/31/14/37/check-mark-1292787_1280.png" alt="" /> {item.text}</p>
                 </Fragment>
               </>
             })

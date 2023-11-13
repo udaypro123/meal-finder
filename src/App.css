@@ -13,11 +13,24 @@
 }
 
 .navbarRightsection{
+    position: relative;
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.navbarRightsection a{
+    position: absolute;
+    left: 2%;
+    bottom: 0;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.navbarRightsection a:hover{
+    color: rgb(43, 25, 25);
+    background-color: rgb(232, 232, 232);
 }
 .navbarRightsection img{
     height: 100%;
@@ -32,6 +45,7 @@
     width: 40%;
     margin-left: 15%;
 }
+
 
 .navbarLeftsection input{
     height: 20%;
@@ -193,8 +207,13 @@
 .para{
    font-size: 1rem;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
-   color: rgb(2, 72, 49);
+   color: rgb(14, 2, 72);
    padding: 1rem 2rem;
+   
+}
+.para img{
+  height: 1rem;
+  width: 1rem;
 }
 
 .favirtoteLowerpart{
@@ -202,27 +221,41 @@
     height: auto;
     width : 100%;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 
 
 
 
-@media screen and (max-width: 1050px) and (min-width: 600px)  {
-        .navbarRightsection img{
-                height: 95%;
-                width: 35%;
-        }
+@media screen and (max-width: 1150px) and (min-width: 1000px)  {
+    .navbarsection {
+        height: 20rem;
+    }
+    .navbarLeftsection {
+        width: 50%;
+        margin-left: 5%;
+    }
+    .navbarLeftsection button {
+        width: 25%;
+    }
+    .recipeCard {
+        width: 28%;
+    }
+     
+}
+
+
+@media screen and (max-width: 1000px) and (min-width: 800px)  {
+        
         .navbarLeftsection {
             height: 85%;
             width: 100%;
-            /* margin-left: 15%; */
+            margin-left: 5%;
         }
         .navbarsection{
-            height: 11rem;
-        }
-        .navbarLeftsection{
-            height: 95%;
+            height: 19rem;
         }
         .navbarLeftsection h1 {
             font-size: 2rem;
@@ -230,17 +263,20 @@
         .navbarLeftsection button {
             height: 18%;
             font-size: 1rem;
-            width: 45%;
+            width: 26%;
         }
-        .bodysection {
-            flex-direction: column;
-        }
+        
         .recipeCard {
-            width: 43%; 
+            width: 40%; 
+        }
+        .navbarRightsection a {
+            
+            font-size: 1rem;
         }
 
         .itemdetaisUpperpart img {
-            width: 15%;
+            height: 68%;
+            width: 20%;
         }
 
         .itemdetaisLowerpart {
@@ -249,8 +285,8 @@
 
 
         .detailsRightpannel {
-            height: 45%;
-            width: 70%;
+            height: 60%;
+            width: 85%;
         }
 
         .detailsLeftpannel {
@@ -258,9 +294,71 @@
             width: 95%; 
         }
 
-
+        .headerofshowdetails img {
+            width: 12%;
+        }
+        .para2 {
+            font-size: 1rem;
+        }
 }
 
+
+@media screen and (max-width: 800px) and (min-width: 600px)  {
+        .navbarRightsection img{
+                display: none;
+        }
+        .navbarLeftsection {
+            height: 85%;
+            width: 100%;
+            margin-left: 5%;
+        }
+        .navbarsection{
+            height: 19rem;
+        }
+        .navbarLeftsection h1 {
+            font-size: 2rem;
+        }
+        .navbarLeftsection button {
+            height: 18%;
+            font-size: 1rem;
+            width: 26%;
+        }
+        
+        .recipeCard {
+            width: 40%; 
+        }
+        .navbarRightsection a {
+            
+            font-size: 1rem;
+        }
+
+        .itemdetaisUpperpart img {
+            height: 68%;
+            width: 20%;
+        }
+
+        .itemdetaisLowerpart {
+            flex-direction: column;
+        }
+
+
+        .detailsRightpannel {
+            height: 60%;
+            width: 85%;
+        }
+
+        .detailsLeftpannel {
+            height: 50%;
+            width: 95%; 
+        }
+
+        .headerofshowdetails img {
+            width: 12%;
+        }
+        .para2 {
+            font-size: 1rem;
+        }
+}
 @media screen and (max-width: 600px) and (min-width: 500px)  {
         .navbarRightsection img{
                 display: none;
@@ -285,7 +383,11 @@
             flex-direction: column;
         }
         .recipeCard {
-            width: 90%; 
+            width: 65%; 
+        }
+        .navbarRightsection a {
+            
+            font-size: 1rem;
         }
 
         .itemdetaisUpperpart img {
@@ -323,13 +425,17 @@
         .navbarLeftsection {
             height: 85%;
             width: 100%;
-            /* margin-left: 15%; */
+            margin-left: 0;
         }
         .navbarsection{
             height: 11rem;
         }
         .navbarLeftsection h1 {
             font-size: 1.5rem;
+        }
+        .navbarRightsection a {
+            
+            font-size: 1rem;
         }
         .navbarLeftsection button {
             height: 18%;
@@ -340,7 +446,7 @@
             flex-direction: column;
         }
         .recipeCard {
-            width: 90%; 
+            width: 75%; 
         }
 
         .itemdetaisUpperpart img {
@@ -351,7 +457,9 @@
         .itemdetaisLowerpart {
             flex-direction: column;
         }
-
+        .navbarsection {
+            height: 15rem;
+        }
 
         .detailsRightpannel {
             height: 40%;
@@ -393,6 +501,10 @@
         }
         .bodysection {
             flex-direction: column;
+        }
+        .navbarRightsection a {
+            
+            font-size: 1rem;
         }
         .recipeCard {
             width: 90%; 
